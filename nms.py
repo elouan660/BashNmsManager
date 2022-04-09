@@ -36,6 +36,6 @@ elif "DISABLEMODS.TXT" in files0:
         os.rename(test2, test)
         print(f"{program}{color.red}[mods désactivés]")
     else:
-        print(f"{program}{color.red}[mods désactivés]")
+        positive()
 else:
     print(f"{program}disablemods non trouvé")
