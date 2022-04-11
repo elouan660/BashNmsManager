@@ -24,7 +24,7 @@ if ".DISABLEMODS.TXT" in files0:
     if request == "y":
         test = os.path.join("""/home/elouandeschamps/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/No Man's Sky/GAMEDATA/PCBANKS/""", ".DISABLEMODS.TXT")
         test2 = os.path.join("""/home/elouandeschamps/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/No Man's Sky/GAMEDATA/PCBANKS""", "DISABLEMODS.TXT")
-        os.rename(test, test2)
+        os.rename(test2, test)
         positive()
     else:
         print(f"{program}{color.red}[mods désactivés]")
@@ -33,7 +33,7 @@ elif "DISABLEMODS.TXT" in files0:
     if request == "y":
         test = os.path.join("""/home/elouandeschamps/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/No Man's Sky/GAMEDATA/PCBANKS/""", ".DISABLEMODS.TXT")
         test2 = os.path.join("""/home/elouandeschamps/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/common/No Man's Sky/GAMEDATA/PCBANKS""", "DISABLEMODS.TXT")
-        os.rename(test2, test)
+        os.rename(test, test2)
         print(f"{program}{color.red}[mods désactivés]")
     else:
         positive()
